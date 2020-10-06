@@ -1,0 +1,111 @@
+BEGIN
+    datastore Legacy { "Version" : "260" }
+    	item M204_ASH {"Schema" : "Legacy", "File" : "ASH" }
+		RECORD_KEY numeric precision 30 scale 0
+		DTS_DTTMSP integer
+		RECTYPE string length 255
+		ASH_EQP_ACTL_CPCTY String length 255
+		ASH_EQP_CLOSED_DT String length 255
+		ASH_EQP_CLOSED_TIME String length 255
+		ASH_EQP_DEST_ORZ_TAG String length 255
+		ASH_EQP_HAZ_MAT_IND String length 255
+		ASH_EQP_MVMNT_CNTRL_CD String length 255
+		ASH_EQP_OBSRVD_SHPMNTS String length 255
+		ASH_EQP_OBSRVD_WGT String length 255
+		ASH_EQP_ORIG_ORZ_TAG String length 255
+		ASH_EQP_RSPNSBL_BUS_SCAC String length 255
+		ASH_EQP_SEAL_NBR String length 255
+		ASH_EQP_TAG String length 255
+		ASH_EQP_UNIT_NBR String length 255
+		ASH_PCM_ENDT String length 255
+		ASH_PCM_END_TIME String length 255
+		ASH_PCM_START_TIME String length 255
+		ASH_PCM_STDT String length 255
+		ASH_PCM_TAG String length 255
+		ASH_PRP_EXT_LNGTH String length 255
+		ASH_TRVL_MODE String length 255
+		CREATE_DATE String length 255
+		CREATE_TIME String length 255
+		PCM_DEST_ORZ_RFRNC_CD String length 255
+		PCM_ORIG_ORZ_RFRNC_CD String length 255
+		SOURCEDELETED boolean
+		Create_TS datetime length 7
+		Modify_TS datetime length 7
+		Mofidy_ID string length 20
+		item M204_ASH_REOCCUR {"Schema" : "Legacy", "File" : "ASH" }
+			ASH_RECORD_KEY numeric precision 30 scale 0
+			DTS_DTTMSP integer
+			RECTYPE string length 255
+			ASH_EQP_HEADLOAD_CPCTY String length 255
+			ASH_EQP_HEADLOD_DEST_ORZ_TAG String length 255
+			ASH_EQP_PLCRDS_IMAGE String length 255
+			ASH_WGP_ID_NBR String length 255
+			ASH_WGP_TAG String length 255
+			DUMMY String length 255
+			SOURCEDELETED boolean
+			Create_TS datetime length 7
+			Modify_TS datetime length 7
+			Mofidy_ID string length 20
+		end_item
+	end_item
+	item M204_BAC {"Schema" : "Legacy", "File" : "BAC" }
+		RECORD_KEY numeric precision 30 scale 0
+		DTS_DTTMSP integer
+		RECTYPE string length 255
+		BAC_ACCT_CODE String length 255
+		BAC_BANK_CODE String length 255
+		BAC_DESCRIPTION String length 255
+		BAC_DISPLAY String length 255
+		BAC_EFF_DATE String length 255
+		BAC_END_DATE String length 255
+		CREATE_DATE String length 255
+		CREATE_TIME String length 255
+		USER String length 255
+		SOURCEDELETED boolean
+		Create_TS datetime length 7
+		Modify_TS datetime length 7
+		Mofidy_ID string length 20
+		item M204_BAC_REOCCUR {"Schema" : "Legacy", "File" : "BAC" }
+			BAC_RECORD_KEY numeric precision 30 scale 0
+			DTS_DTTMSP integer
+			RECTYPE string length 255
+			BAC_AUDIT_IMAGE String length 255
+			DUMMY String length 255
+			SOURCEDELETED boolean
+			Create_TS datetime length 7
+			Modify_TS datetime length 7
+			Mofidy_ID string length 20
+		end_item
+	end_item
+	item M204_CMT {"Schema" : "Legacy", "File" : "CMT" }
+		RECORD_KEY numeric precision 30 scale 0
+		DTS_DTTMSP integer
+		RECTYPE string length 255
+		CMT_BUS_TAG String length 255
+		CREATE_DATE String length 255
+		DATE_R String length 255
+		FUNCTION String length 255
+		PROCEDURE String length 255
+		TIME_R String length 255
+		USER String length 255
+		SOURCEDELETED boolean
+		Create_TS datetime length 7
+		Modify_TS datetime length 7
+		Mofidy_ID string length 20
+		item M204_CMT_REOCCUR {"Schema" : "Legacy", "File" : "CMT" }
+			CMT_RECORD_KEY numeric precision 30 scale 0
+			DTS_DTTMSP integer
+			RECTYPE string length 255
+			CMT_PROFILE_INTL_TEXT String length 255 {"isBase64" : "1"}
+			CMT_PROFILE_MISC_TEXT String length -1 {"isBase64" : "1"}
+			CMT_PROFILE_RAF_TEXT String length -1 {"isBase64" : "1"}
+			DUMMY String length 255
+			SOURCEDELETED boolean
+			Create_TS datetime length 7
+			Modify_TS datetime length 7
+			Mofidy_ID string length 20
+		end_item
+	end_item
+
+    end_datastore
+END
