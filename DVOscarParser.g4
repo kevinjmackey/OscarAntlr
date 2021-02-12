@@ -7,10 +7,7 @@ dvoscar_file
 	;
 
 block
-	: BEGIN datastore_statements+ END
-	;
-datastore_statements
-	: datastore_statement+
+	: BEGIN datastore_statement END
 	;
 datastore_statement
 	: DATASTORE identifier display_name? properties?
