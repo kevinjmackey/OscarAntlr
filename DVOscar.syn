@@ -1,0 +1,59 @@
+
+C=1
+
+[Syntax]
+Namespace1 = 6
+IgnoreCase = Yes
+KeyWordLength =
+BracketChars = (){}[]
+OperatorChars = -+*/<>!~%^&|=
+PreprocStart = #
+CommentStart = /*
+CommentEnd = */
+CommentStartAlt =
+CommentEndAlt =
+SingleComment = //
+SingleCommentCol =
+SingleCommentAlt = 
+SingleCommentColAlt =
+SingleCommentEsc =
+StringsSpanLines = No
+StringStart = "
+StringEnd = "
+StringAlt = 
+StringEsc =
+CharStart = '
+CharEnd = '
+CharEsc =
+
+[Keywords 1]
+associated
+begin
+end
+datastore
+end_datastore
+item
+key
+end_item
+one_to_one
+many_to_many
+length
+precision
+scale
+default
+plural
+
+[Keywords 2]
+integer
+float
+character
+numeric
+string
+date
+datetime
+time
+boolean
+guid
+
+[Keywords 3]
+include
