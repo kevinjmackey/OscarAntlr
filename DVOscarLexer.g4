@@ -114,6 +114,9 @@ INTEGER
 MANY_TO_MANY
    : M A N Y '_' T O '_' M A N Y
    ;
+MANY_TO_ONE
+   : M A N Y '_' T O '_' O N E
+   ;
 MINUS
    : '-'
    ;

@@ -1,5 +1,5 @@
 BEGIN
-	datastore myStore "My Database" {"Testing" : "True"}
+	datastore myStore "My Database" {"Testing" : True ]
 	item item1 "Customer Record" 
 			associated modified_by one_to_one user key modifiedId key userId 
 			associated has_address MANY_TO_MANY address key CustomerId key addressId {"IntersectionTable": "SomeTableName"}

@@ -34,12 +34,16 @@ association_def
 cardinality
         : o2o
         | m2m
+        | m2o
         ;
 o2o
         : ONE_TO_ONE identifier from_key to_key
         ;
 m2m
         : MANY_TO_MANY identifier from_key to_key
+        ;
+m2o
+        : MANY_TO_ONE identifier from_key to_key
         ;
 from_key
         : KEY identifier
