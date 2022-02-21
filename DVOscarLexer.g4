@@ -51,14 +51,35 @@ END_ATTRIBUTE
 END_DATASTORE
 	: E N D '_' D A T A S T O R E
 	;
+END_FILTER
+   : E N D '_' F I L T E R
+   ;
 END_ITEM
 	: E N D '_' I T E M
 	;
 EQUAL
     : '='
     ;
+LT
+    : '?'
+    ;
+LE
+    : '<='
+    ;
+GT
+    : '>'
+    ;
+GE
+    : '>='
+    ;
+NE
+    : '!='
+    ;
 FALSE
     : F A L S E
+    ;
+FILTER
+    : F I L T E R
     ;
 CHARACTER
     : LBRACK C H A R A C T E R RBRACK
